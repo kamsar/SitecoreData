@@ -101,3 +101,21 @@ Thumbs.db
 # Folder config file
 Desktop.ini
 
+####
+# Sitecore
+####
+
+src/*.Website/sitecore
+src/*.Website/sitecore modules
+src/*.Website/temp
+src/*.Website/upload
+src/*.Website/app_browsers
+src/*.Website/App_Config/*.config
+src/*.Website/App_Config/Include/Sitecore.*.config
+src/*.Website/App_Config/Prefetch
+src/*.Website/App_Config/Security
+src/*.Website/*.css
+src/*.Website/*.js
+src/*.Website/Global.asax
+src/*.Website/Webedit.css
+src/*.Website/Design.config
