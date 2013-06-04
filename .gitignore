@@ -119,3 +119,4 @@ src/*.Website/*.js
 src/*.Website/Global.asax
 src/*.Website/Webedit.css
 src/*.Website/Design.config
+src/*.Website/data

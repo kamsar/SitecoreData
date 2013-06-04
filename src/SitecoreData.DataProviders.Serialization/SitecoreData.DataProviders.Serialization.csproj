@@ -75,7 +75,6 @@
   <ItemGroup>
     <Compile Include="SerializationDataProvider.cs" />
     <Compile Include="SerializedDatabase.cs" />
-    <Compile Include="_old_SerializationDataProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

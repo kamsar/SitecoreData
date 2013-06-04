@@ -110,11 +110,11 @@ namespace SitecoreData.DataProviders
                                TemplateId = new ID("{C6576836-910C-4A3D-BA03-C277DBD3B827}").ToGuid()
                            };
 
-            Provider.WritableProvider.Store(rootItem);
+        //    Provider.WritableProvider.Store(rootItem);
 
-            AddVersion(new ItemDefinition(new ID(rootItem.Id), rootItem.Name, new ID(rootItem.TemplateId), ID.Null),
+        /*    AddVersion(new ItemDefinition(new ID(rootItem.Id), rootItem.Name, new ID(rootItem.TemplateId), ID.Null),
                        new VersionUri(Language.Parse("en"), Version.First),
-                       null);
+                       null);*/
         }
 
         public override ItemDefinition GetItemDefinition(ID itemId, CallContext context)

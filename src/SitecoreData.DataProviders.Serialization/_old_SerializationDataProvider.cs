@@ -32,12 +32,7 @@ namespace SitecoreData.DataProviders.Serialization
             }
         }
 
-        public override ID SelectSingleID(string query, CallContext context)
-        {
-            return base.SelectSingleID(query, context);
-        }
-
-        public override bool HasChildren(ItemDefinition itemDefinition, CallContext context)
+	    public override bool HasChildren(ItemDefinition itemDefinition, CallContext context)
         {
             var database = GetDatabase(context);
             var children = database.GetChildren(itemDefinition.ID.ToString());
@@ -67,36 +62,6 @@ namespace SitecoreData.DataProviders.Serialization
             }
 
             return ids;
-        }
-
-        public override bool BlobStreamExists(Guid blobId, CallContext context)
-        {
-            return base.BlobStreamExists(blobId, context);
-        }
-
-        public override Stream GetBlobStream(Guid blobId, CallContext context)
-        {
-            return base.GetBlobStream(blobId, context);
-        }
-
-        public override long GetDataSize(int minEntitySize, int maxEntitySize)
-        {
-            return base.GetDataSize(minEntitySize, maxEntitySize);
-        }
-
-        public override string GetProperty(string name, CallContext context)
-        {
-            return base.GetProperty(name, context);
-        }
-
-        public override long GetDictionaryEntryCount()
-        {
-            return base.GetDictionaryEntryCount();
-        }
-
-        public override List<string> GetPropertyKeys(string prefix, CallContext context)
-        {
-            return base.GetPropertyKeys(prefix, context);
         }
 
         public override ID ResolvePath(string itemPath, CallContext context)
